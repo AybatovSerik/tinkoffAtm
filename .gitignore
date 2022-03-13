@@ -2,3 +2,4 @@
 myToken.py
 *.iml
 __pycache__/
+*.txt
