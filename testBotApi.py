@@ -29,9 +29,9 @@ def nowWork(m):
         makeRequestWork()
     except:
         bot.send_message(m.chat.id, "Request Problem!")
-    atms = parseATM("requestResponse.txt")
+    atms = parseATM("requestResponseWork.txt")
     for atm in atms:
-        if atm.id in interestedIds:
+        if atm.id in workIds:
             bot.send_message(m.chat.id, str(atm))
 
 @bot.message_handler(commands=["stop"])
